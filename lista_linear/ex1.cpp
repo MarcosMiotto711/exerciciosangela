@@ -1,6 +1,6 @@
 #include <iostream>
 typedef int elemento_lista;
-#include "listaligada.h"
+#include "lista_cf.h"
 #include <cstring>
 
 using namespace std;
