@@ -4,7 +4,7 @@
 //
 //  
 ////  Created by  Engelbrecht on 13/03/19.
-//  Copyright © 2019 Angela Engelbrecht. All rights reserved.
+//  Copyright ï¿½ 2019 Angela Engelbrecht. All rights reserved.
 //
 // ListaLinearDinamica.h
 // -------------------------------------------------------------------------
@@ -31,7 +31,7 @@ struct Lista {
     int comp;
     no *primeiro;
 };
-///função auxiliar para as mensagens de erros
+///funï¿½ï¿½o auxiliar para as mensagens de erros
 void  Erro ( int k ){
     switch( k){
         case 1: cout << "  Posicao Invalida"; exit(1);
@@ -40,28 +40,28 @@ void  Erro ( int k ){
         default: exit(1);
     }
 }
-///função para iniciar a lista linear vazia
+///funï¿½ï¿½o para iniciar a lista linear vazia
 void  init ( Lista& L){
     L.comp = 0;
     L.primeiro = NULL;
 }
-///função que testa se a lista linear está vazia 1 (sim) 0 (não)
+///funï¿½ï¿½o que testa se a lista linear estï¿½ vazia 1 (sim) 0 (nï¿½o)
 int   vazia (Lista L){
     if( L.primeiro == NULL)
         return 1;
     else return 0;
 }
-/// função que retorna o número de elementos na lista linear
+/// funï¿½ï¿½o que retorna o nï¿½mero de elementos na lista linear
 int compr(Lista L){
     return L.comp;
 }
-///função que alocamemória para um nó
+///funï¿½ï¿½o que alocamemï¿½ria para um nï¿½
 no* novo_no(){
     no* novo = (no*) malloc (sizeof(no));
     if (!novo) exit(1);
     return novo;
 }
-///função que insere uma informação na I-ésima posição
+///funï¿½ï¿½o que insere uma informaï¿½ï¿½o na I-ï¿½sima posiï¿½ï¿½o
 void inserir ( Lista& L, elemento_lista V,  int I){
     no *p, *x, *s=NULL;   int  cont = 1;
     if (( I <= 0 ) || ( I > L.comp + 1)) Erro (1);
@@ -78,7 +78,7 @@ void inserir ( Lista& L, elemento_lista V,  int I){
     p-> link  = x;
     L.comp++;
 }
-///função que consulta uma informação da I-ésima posição
+///funï¿½ï¿½o que consulta uma informaï¿½ï¿½o da I-ï¿½sima posiï¿½ï¿½o
 elemento_lista consultar (Lista L, int I){
     no * x;
     if (( I <= 0 ) || ( I > L.comp ))   Erro (1);
@@ -91,7 +91,7 @@ elemento_lista consultar (Lista L, int I){
     }
     return x->info;
 }
-///função que altera a informação da I-ésima posição
+///funï¿½ï¿½o que altera a informaï¿½ï¿½o da I-ï¿½sima posiï¿½ï¿½o
 void alterar (Lista& L, elemento_lista V, int I){
     no * x; int  cont = 1;
     if (( I <= 0 ) || ( I > L.comp ))   Erro (1);
@@ -103,7 +103,7 @@ void alterar (Lista& L, elemento_lista V, int I){
     }
     x->info= V;
 }
-///função que insere uma informação na I-ésima posição
+///funï¿½ï¿½o que insere uma informaï¿½ï¿½o na I-ï¿½sima posiï¿½ï¿½o
 elemento_lista eliminar (Lista& L, int I){
     elemento_lista V;
     no * x, *s=NULL;
