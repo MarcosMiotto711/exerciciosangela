@@ -7,7 +7,7 @@ using namespace std;
 
 int verificador(Lista L){
     int ant;
-    for(int i=1;i<=L.comp;i++){
+    for(int i=1;i<=compr(L);i++){
         if(ant > consultar(L,i)){
             return 0;
         }
@@ -29,7 +29,7 @@ int main(){
     }
     x = verificador(L);
     if(x==0){
-        cout << "Não estao em ordem crescente!";
+        cout << "Não estão em ordem crescente!";
     }else{
         cout << "Estão em ordem crescente!";
     }

@@ -20,7 +20,7 @@ int main(){
     Lista L;
     init(L);
     inserir_numeros(&L);
-    for(int i=1;i<=L.comp;i++){
+    for(int i=1;i<=compr(L);i++){
         cout << consultar(L,i) << endl;
     }
 }

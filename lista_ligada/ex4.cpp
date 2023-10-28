@@ -6,8 +6,8 @@ typedef int elemento_lista;
 using namespace std;
 
 void acrescentador(Lista *lista1, Lista lista2){
-    int n1 = lista1->comp;
-    int n2 = lista2.comp;
+    int n1 = compr(*lista1);
+    int n2 = compr(lista2);
     n1++;
     for(int i=1;i<=n2;i++){
         inserir(*lista1,consultar(lista2,i),n1);
@@ -24,7 +24,7 @@ int main(){
         inserir(L2,i*3,i);
     }
     acrescentador(&L1,L2);
-    for(int i=1;i<=L1.comp;i++){
+    for(int i=1;i<=compr(L1);i++){
         cout << consultar(L1,i) << endl;
     }
     return 0;
